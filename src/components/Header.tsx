@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { fadeIn } from "variants";
+import Link from 'next/link'
 
 const Header = () => {
   return (
@@ -12,13 +13,19 @@ const Header = () => {
       <span className="header-logo" ><a href="/.">LIDAs MESON</a></span>
       <ul>
         <li>
-          <a href="/historia">Historia</a>
+          <Link href="/historia"><a >Historia</a></Link>          
         </li>
         <li>
-          <a href="/platos">Platos</a>
+          <Link href="/platos">
+          <a >Platos</a>
+          </Link>
+          
         </li>
         <li>
-          <a href="/contactos">Contactos</a>
+          <Link href="/contactos">
+          <a >Contactos</a>
+          </Link>
+
         </li>
       </ul>
     </motion.nav>
